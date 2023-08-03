@@ -15,7 +15,7 @@ number.
 Lets go for it!!!!!
 
 '''
-from re import S
+
 
 
 def lnSearch(elements, key):               #Defining a function
