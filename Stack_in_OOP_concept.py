@@ -10,11 +10,11 @@ def create():            #Creating an function
     return element
 
 def check_len(element):   #Length of the element
-     return len(element)
-
-def empty_length(element):
-     return empty_length(element)==0
-        
+     if len(element)==0:
+          print("Empty stack")
+     else:
+          print("The size of stack is =" ,len(element))
+         
 
 def element_push(element,item):  #Pushing an element
      return element.append(item)
@@ -29,15 +29,16 @@ def element_pop(element):        #Removing an element
 
 arr=create()           #Now, defined worl
 print(arr)             
-print("Length of the array is = "+str(check_len(arr))) #Checking the array lenght
+check_len(arr)
 element_push(arr,2)
 element_push(arr,6)
 element_push(arr,9)
 element_push(arr,5)
 print(arr)
-print("Length of the array is = "+str(check_len(arr)))
+check_len(arr)
 element_pop(arr)                                  #Poping the elements
 print(arr)
+check_len(arr)
 
 
 
